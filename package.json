@@ -1,0 +1,12 @@
+{
+  "name": "rs-api-automation",
+  "scripts": {
+    "test": "cucumber-js --config config/cucumber.json"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.1.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1",
+    "pactum": "^3.5.1"
+  }
+}
