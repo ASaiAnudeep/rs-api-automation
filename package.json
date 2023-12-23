@@ -1,7 +1,7 @@
 {
   "name": "rs-api-automation",
   "scripts": {
-    "test": "cucumber-js --config config/cucumber.json"
+    "test": "cucumber-js src --config src/config/cucumber.json"
   },
   "dependencies": {
     "@cucumber/cucumber": "^10.1.0",

@@ -22,7 +22,6 @@ This framework provides a structured approach to test the RudderStack API using 
 RS_EMAIL="<email>"
 RS_PASSWORD="<password>"
 RS_DATA_PLANE_URL="<url>"
-RS_SOURCE_WRITE_KEY="<write-key>"
 ```
 
 ## Run Tests:

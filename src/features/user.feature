@@ -12,9 +12,7 @@ Feature: User
         "canSetupMfa": true,
         "workspaces": [
             {
-                "id": "2Zvg9W7WdKnj0M4OQCnQMTY6PA8",
                 "name": "usoplay-yafebig215",
-                "organizationId": "2Zvg9WbrtOQ0Pbizjd5gTMrQYKw",
                 "environment": "PRODUCTION",
                 "isDefault": true,
                 "roles": [],
@@ -24,7 +22,6 @@ Feature: User
         ],
         "organizations": [
             {
-                "id": "2Zvg9WbrtOQ0Pbizjd5gTMrQYKw",
                 "name": "usoplay-yafebig215",
                 "role": "admin"
             }
@@ -32,7 +29,6 @@ Feature: User
         "phoneNumber": null,
         "mfaStatus": null,
         "email": "$M{ENV.RS_EMAIL}",
-        "id": "2ZvfqYU9VKuVjSWAOTXXN0gSOK1",
         "name": "Yaf",
         "provider": null,
         "providerUserId": null,
