@@ -7,3 +7,11 @@ addDataFuncHandler('GetDate', (ctx) => {
   const unit = ctx.args[1];
   return dayjs().add(value, unit).toISOString();
 });
+
+addDataFuncHandler('GetStartOfDay', () => {
+  return dayjs().startOf('day').toISOString();
+});
+
+addDataFuncHandler('GetEndOfDay', () => {
+  return dayjs().endOf('day').toISOString();
+});

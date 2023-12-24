@@ -37,6 +37,12 @@ addSpecHandler('get-sources', ({spec}) => {
   spec.expectStatus(200);
 });
 
+addSpecHandler('get-destinations', ({spec}) => {
+  spec.get('/workspaces/$S{WORKSPACE_ID}/destinations');
+  spec.withBearerToken('$S{ID_TOKEN}');
+  spec.expectStatus(200);
+});
+
 addSpecHandler('delete-source', ({spec}) => {
   spec.delete('/workspaces/$S{WORKSPACE_ID}/sources/$S{SOURCE_ID}');
   spec.withBearerToken('$S{ID_TOKEN}');

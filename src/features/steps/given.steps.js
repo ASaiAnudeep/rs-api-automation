@@ -58,3 +58,7 @@ Given(/I set inspection/, function () {
 Given(/^I set source write key (.*)$/, function (key) {
   base.spec.withAuth(key, "");
 });
+
+Given('I wait for {int} ms', { timeout: 120000 }, async function (ms) {
+  await pactum.sleep(ms);
+});

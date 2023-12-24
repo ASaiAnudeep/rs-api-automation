@@ -1,5 +1,4 @@
 const { Then } = require('@cucumber/cucumber');
-const pactum = require('pactum');
 const base = require('./base.steps');
 
 Then(/^I expect response to match a json snapshot (.*)$/, async function (name) {
@@ -65,8 +64,4 @@ Then('I expect response time should be less than {int} ms', function (ms) {
 
 Then(/^I store response at (.*) as (.*)$/, function (path, name) {
   base.spec.stores(name, path);
-});
-
-Then('I wait for {int} ms', function (ms) {
-  pactum.sleep(ms);
 });
